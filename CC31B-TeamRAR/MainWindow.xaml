@@ -99,7 +99,7 @@
                        Height="125" 
                        Grid.Row="1" 
 
-                       Source="{Binding CurrentLocation.ImagePath}"/>
+                       Source="{Binding CurrentLocation.ImageName}"/>
 
                 <TextBlock Grid.Row="2" 
                            HorizontalAlignment="Center"

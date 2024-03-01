@@ -26,7 +26,7 @@ namespace Engine.ViewModels
             CurrentLocation.YCoordinate = 0;
             CurrentLocation.Name = "Home";
             CurrentLocation.Description = "This is your house";
-            CurrentLocation.ImagePath = "pack://application:,,,/Engine;component/Images/Locations/home.jpg";
+            CurrentLocation.ImageName = "pack://application:,,,/Engine;component/Images/Locations/home.jpg";
         }
     }
 }
