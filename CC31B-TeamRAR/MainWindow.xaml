@@ -85,7 +85,29 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <Label Grid.Row="0" Grid.Column="0" Content="Location Information" Background="#5C5470"/>
+            <Grid Grid.Row="0" Grid.Column="0" Background="#5C5470">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" 
+                           HorizontalAlignment="Center"
+                           Text="{Binding CurrentLocation.Name}"/>
+                <Image Width="125" 
+                       Height="125" 
+                       Grid.Row="1" 
+
+                       Source="{Binding CurrentLocation.ImagePath}"/>
+
+                <TextBlock Grid.Row="2" 
+                           HorizontalAlignment="Center"
+                           Text="{Binding CurrentLocation.Description}"/>
+
+            </Grid>
+
+            
             <Label Grid.Row="1" Grid.Column="0" Content="Enemy Location" Background="#5C5470"/>
         </Grid>
         <Label Grid.Row="2" Grid.Column="2" Content="Navigation Buttons" Background="#E78895"/>
