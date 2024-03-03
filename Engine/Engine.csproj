@@ -8,9 +8,6 @@
 
   <ItemGroup>
 	<Resource Include="Images\Locations\Home.png" />
-  </ItemGroup>
-
-  <ItemGroup>
 	<Resource Include="Images\Locations\Home.jpg" />
   </ItemGroup>
 </Project>
