@@ -6,11 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-	<Resource Include="Images\Locations\Home.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-	<Resource Include="Images\Locations\Home.jpg" />
-  </ItemGroup>
+	<ItemGroup>
+		<Resource Include="Images\Locations\MatchaGreenOffice.png" />
+		<Resource Include="Images\Locations\FondueLake.png" />
+		<Resource Include="Images\Locations\BambooCookieForest.png" />
+		<Resource Include="Images\Locations\WhiteChocolateHeaven.png" />
+		<Resource Include="Images\Locations\WhiteChocolateMochaFalls.png" />
+		<Resource Include="Images\Locations\VanillaIceCity.png" />
+		<Resource Include="Images\Locations\TropicalCheeseBeach.png" />
+		<Resource Include="Images\Locations\CinnamonCoralOcean.png" />
+		<Resource Include="Images\Locations\ChocoLavaIsland.png" />
+	</ItemGroup>
 </Project>

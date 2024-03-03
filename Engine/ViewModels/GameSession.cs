@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Engine.Factories;
 using Engine.Models;
 
 namespace Engine.ViewModels
@@ -11,6 +12,7 @@ namespace Engine.ViewModels
     {
         public Player CurrentPlayer { get; set; }
         public Location CurrentLocation { get; set; }
+        public World CurrentWorld { get; set; }
         public GameSession()
         {
             CurrentPlayer = new Player();
@@ -21,12 +23,9 @@ namespace Engine.ViewModels
             CurrentPlayer.Level = 1;
             CurrentPlayer.Gold = 1000000000;
 
-            CurrentLocation = new Location();
-            CurrentLocation.XCoordinate = 0;
-            CurrentLocation.YCoordinate = 0;
-            CurrentLocation.Name = "Home";
-            CurrentLocation.Description = "This is your house";
-            CurrentLocation.ImageName = "pack://application:,,,/Engine;component/Images/Locations/Home.png";
+            WorldFactory worldFactory = new WorldFactory(); 
+            CurrentWorld = worldFactory.CreateWorld();  
+            CurrentLocation = CurrentWorld.LocationAt(0, 0);
         }
 
         public void MoveNorth()
