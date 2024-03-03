@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -6,4 +6,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+	<Resource Include="Images\Locations\Home.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<Resource Include="Images\Locations\Home.jpg" />
+  </ItemGroup>
 </Project>
