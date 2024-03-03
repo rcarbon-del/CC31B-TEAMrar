@@ -5,9 +5,4 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-	<Resource Include="Images\Locations\Home.png" />
-	<Resource Include="Images\Locations\Home.jpg" />
-  </ItemGroup>
 </Project>
