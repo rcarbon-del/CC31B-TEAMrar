@@ -18,8 +18,6 @@ namespace Engine.Models
             loc.Description = description;
             loc.ImageName = imageName;
             _locations.Add(loc);
-
-            _locations.Add(loc);
         }
 
         public Location LocationAt(int xCoordinate, int yCoordinate)

@@ -10,7 +10,7 @@ using Engine.Models;
 
 namespace Engine.ViewModels
 {
-    public class GameSession
+    public class GameSession : INotifyPropertyChanged
     {
         private Location _currentLocation;
         public Player CurrentPlayer { get; set; }
@@ -20,7 +20,7 @@ namespace Engine.ViewModels
             set
             {
                 _currentLocation = value;
-                OnPropertyChanged("CurrentLocation");
+                OnPropertyChanged(nameof(CurrentLocation));
             }
         }
         public World CurrentWorld { get; set; }
@@ -38,7 +38,7 @@ namespace Engine.ViewModels
             CurrentWorld = worldFactory.CreateWorld();  
             CurrentLocation = CurrentWorld.LocationAt(0, 0);
         }
-        public event PropertyChangedEventHandler? PropertyChanged;
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public virtual void OnPropertyChanged(string propertyName)
         {
