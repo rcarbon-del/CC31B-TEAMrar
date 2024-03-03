@@ -38,9 +38,9 @@ namespace Engine.ViewModels
             CurrentWorld = worldFactory.CreateWorld();  
             CurrentLocation = CurrentWorld.LocationAt(0, 0);
         }
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler? PropertyChanged;
 
-        public virtual void OnPropertyChanged(string propertyName)
+        protected virtual void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
