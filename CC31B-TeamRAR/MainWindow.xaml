@@ -58,7 +58,6 @@
                 <Label Grid.Row="4" Grid.Column="1" Content="{Binding CurrentPlayer.Level}"/>
                 <Label Grid.Row="5" Grid.Column="0" Content="Gold"/>
                 <Label Grid.Row="5" Grid.Column="1" Content="{Binding CurrentPlayer.Gold}"/>
-                <Button Grid.Row="6" Grid.Column="1" Content="Add Gold" Click="ButtonBase_OnClick"/>
 
             </Grid>
         </Grid>
@@ -92,9 +91,12 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-                <TextBlock Grid.Row="0" 
+                <Border Grid.Row="0">
+                    <TextBlock Grid.Row="0" 
                            HorizontalAlignment="Center"
                            Text="{Binding CurrentLocation.Name}"/>
+                </Border>
+
                 <Image Width="125" 
                        Height="125" 
                        Grid.Row="1" 
