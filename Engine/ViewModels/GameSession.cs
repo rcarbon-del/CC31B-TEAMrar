@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using Engine.Factories;
 using Engine.Models;
 
@@ -10,8 +12,17 @@ namespace Engine.ViewModels
 {
     public class GameSession
     {
+        private Location _currentLocation;
         public Player CurrentPlayer { get; set; }
-        public Location CurrentLocation { get; set; }
+        public Location CurrentLocation
+        {
+            get { return _currentLocation;}
+            set
+            {
+                _currentLocation = value;
+                OnPropertyChanged("CurrentLocation");
+            }
+        }
         public World CurrentWorld { get; set; }
         public GameSession()
         {
@@ -27,22 +38,31 @@ namespace Engine.ViewModels
             CurrentWorld = worldFactory.CreateWorld();  
             CurrentLocation = CurrentWorld.LocationAt(0, 0);
         }
+        public event PropertyChangedEventHandler? PropertyChanged;
+
+        public virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
 
         public void MoveNorth()
         {
-            CurrentLocation = CurrentLocation.LocationAt(CurrentLocation.XCoordinate, CurrentLocation.YCoordinate + 1);
+            CurrentLocation = CurrentWorld.LocationAt(CurrentLocation.XCoordinate, CurrentLocation.YCoordinate + 1);
         }
 
         public void MoveWest()
-        { 
+        {
+            CurrentLocation = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 1, CurrentLocation.YCoordinate);
         }
 
         public void MoveEast()
-        {  
+        {
+            CurrentLocation = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 1, CurrentLocation.YCoordinate);
         }
 
         public void MoveSouth()
         {
+            CurrentLocation = CurrentWorld.LocationAt(CurrentLocation.XCoordinate, CurrentLocation.YCoordinate - 1);
         }
     }
 }
