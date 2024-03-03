@@ -28,5 +28,22 @@ namespace Engine.ViewModels
             CurrentLocation.Description = "This is your house";
             CurrentLocation.ImageName = "pack://application:,,,/Engine;component/Images/Locations/Home.png";
         }
+
+        public void MoveNorth()
+        {
+            CurrentLocation = CurrentLocation.LocationAt(CurrentLocation.XCoordinate, CurrentLocation.YCoordinate + 1);
+        }
+
+        public void MoveWest()
+        { 
+        }
+
+        public void MoveEast()
+        {  
+        }
+
+        public void MoveSouth()
+        {
+        }
     }
 }

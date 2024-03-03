@@ -57,9 +57,7 @@
                 <Label Grid.Row="4" Grid.Column="0" Content="Level"/>
                 <Label Grid.Row="4" Grid.Column="1" Content="{Binding CurrentPlayer.Level}"/>
                 <Label Grid.Row="5" Grid.Column="0" Content="Gold"/>
-                <Label Grid.Row="5" Grid.Column="1" Content="{Binding CurrentPlayer.Gold}"/>
-                <Button Grid.Row="6" Grid.Column="1" Content="Add Gold" Click="ButtonBase_OnClick"/>
-
+            
             </Grid>
         </Grid>
 
@@ -111,5 +109,34 @@
             <Label Grid.Row="1" Grid.Column="0" Content="Enemy Location" Background="#5C5470"/>
         </Grid>
         <Label Grid.Row="2" Grid.Column="2" Content="Navigation Buttons" Background="#E78895"/>
+        <Grid Grid.Row="2" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0" Grid.Column="1"
+                    Height="25" Width="65" Margin="8"
+                    Content="North"
+                    Click="OnClick_MoveNorth"/>
+            <Button Grid.Row="1" Grid.Column="0" 
+                    Height="25" Width="65" Margin="8"
+                    Content="West"
+                    Click="OnClick_MoveWest"/>
+            <Button Grid.Row="1" Grid.Column="2" 
+                    Height="25" Width="65" Margin="8"
+                    Content="East"
+                    Click="OnClick_MoveEast"/>
+            <Button Grid.Row="2" Grid.Column="1" 
+                    Height="25" Width="65" Margin="8"
+                    Content="South"
+                    Click="OnClick_MoveSouth"/>
+        </Grid>
     </Grid>
+    
 </Window>
