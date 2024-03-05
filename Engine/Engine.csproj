@@ -8,20 +8,19 @@
 
   <ItemGroup>
     <None Remove="Images\Locations\CrinkleDessert.png" />
-    <None Remove="Images\Locations\home.png" />
   </ItemGroup>
 
-	<ItemGroup>
-		<Resource Include="Images\Locations\CrinkleDessert.png" />
-		<Resource Include="Images\Locations\home.png" />
-		<Resource Include="Images\Locations\MatchaGreenOffice.png" />
-		<Resource Include="Images\Locations\FondueLake.png" />
-		<Resource Include="Images\Locations\BambooCookieForest.png" />
-		<Resource Include="Images\Locations\WhiteChocolateHeaven.png" />
-		<Resource Include="Images\Locations\WhiteChocolateMochaFalls.png" />
-		<Resource Include="Images\Locations\VanillaIceCity.png" />
-		<Resource Include="Images\Locations\TropicalCheeseBeach.png" />
-		<Resource Include="Images\Locations\CinnamonCoralOcean.png" />
-		<Resource Include="Images\Locations\ChocoLavaIsland.png" />
-	</ItemGroup>
+  <ItemGroup>
+	<Resource Include="Images\Locations\CrinkleDessert.png" />
+	<Resource Include="Images\Locations\home.png" />
+	<Resource Include="Images\Locations\MatchaGreenOffice.png" />
+	<Resource Include="Images\Locations\FondueLake.png" />
+	<Resource Include="Images\Locations\BambooCookieForest.png" />
+	<Resource Include="Images\Locations\WhiteChocolateHeaven.png" />
+	<Resource Include="Images\Locations\WhiteChocolateMochaFalls.png" />
+	<Resource Include="Images\Locations\VanillaIceCity.png" />
+	<Resource Include="Images\Locations\TropicalCheeseBeach.png" />
+	<Resource Include="Images\Locations\CinnamonCoralOcean.png" />
+	<Resource Include="Images\Locations\ChocoLavaIsland.png" />
+  </ItemGroup>
 </Project>
