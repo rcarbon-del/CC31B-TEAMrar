@@ -13,7 +13,6 @@ namespace Engine.ViewModels
     public class GameSession : BaseNotificationClass
     {
         private Location _currentLocation;
-        public Player CurrentPlayer { get; set; }
         public Location CurrentLocation
         {
             get { return _currentLocation;}
@@ -58,13 +57,16 @@ namespace Engine.ViewModels
         }
         public GameSession()
         {
-            CurrentPlayer = new Player();
-            CurrentPlayer.Name = "Gerr-real";
-            CurrentPlayer.CharacterClass = "Fighter";
-            CurrentPlayer.HitPoints = 10;
-            CurrentPlayer.ExperiencePoints = 0;
-            CurrentPlayer.Level = 1;
-            CurrentPlayer.Gold = 1000000000;
+
+        Player CurrentPlayer = new Player
+        {
+            Name = "Gerr-real",
+            CharacterClass = "Fighter",
+            HitPoints = 10,
+            ExperiencePoints = 0,
+            Level = 1,
+            Gold = 1000000000,
+        };
 
             CurrentWorld = WorldFactory.CreateWorld();  
             CurrentLocation = CurrentWorld.LocationAt(0, 0);
