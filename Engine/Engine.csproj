@@ -23,4 +23,8 @@
 	<Resource Include="Images\Locations\CinnamonCoralOcean.png" />
 	<Resource Include="Images\Locations\ChocoLavaIsland.png" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Images\Items\" />
+  </ItemGroup>
 </Project>
