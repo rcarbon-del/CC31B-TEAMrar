@@ -7,10 +7,33 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\Items\BearJellyCoins.png" />
+    <None Remove="Images\Items\CookieAxe.png" />
+    <None Remove="Images\Items\CookieGun.png" />
+    <None Remove="Images\Items\CookiePowder.png" />
+    <None Remove="Images\Items\CrystalJam.png" />
+    <None Remove="Images\Items\GoldenCroissant.png" />
+    <None Remove="Images\Items\InsigniaCookieTreasure.png" />
+    <None Remove="Images\Items\StarJelly.png" />
+    <None Remove="Images\Items\SugarCrystals.png" />
+    <None Remove="Images\Items\TheJellyofMemories.png" />
     <None Remove="Images\Locations\CrinkleDessert.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\Items\InsigniaCookieTreasure.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<Resource Include="Images\Items\BearJellyCoins.png" />
+	<Resource Include="Images\Items\CookieAxe.png" />
+	<Resource Include="Images\Items\CookieGun.png" />
+	<Resource Include="Images\Items\CookiePowder.png" />
+	<Resource Include="Images\Items\CrystalJam.png" />
+	<Resource Include="Images\Items\GoldenCroissant.png" />
+	<Resource Include="Images\Items\StarJelly.png" />
+	<Resource Include="Images\Items\SugarCrystals.png" />
+	<Resource Include="Images\Items\TheJellyofMemories.png" />
 	<Resource Include="Images\Locations\CrinkleDessert.png" />
 	<Resource Include="Images\Locations\home.png" />
 	<Resource Include="Images\Locations\MatchaGreenOffice.png" />
@@ -22,9 +45,5 @@
 	<Resource Include="Images\Locations\TropicalCheeseBeach.png" />
 	<Resource Include="Images\Locations\CinnamonCoralOcean.png" />
 	<Resource Include="Images\Locations\ChocoLavaIsland.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Images\Items\" />
   </ItemGroup>
 </Project>
