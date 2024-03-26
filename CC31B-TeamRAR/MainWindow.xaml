@@ -66,8 +66,42 @@
 
             </Grid>
         </Grid>
+        <Grid Grid.Row="2" Grid.Column="0"
+              Background="#FFC4C4">
 
-        <Label Grid.Row="2" Grid.Column="0" Content="Inventory and Quests" Background="#FFC4C4"/>
+            <TabControl>
+                <TabItem Header="Inventory">
+                    <DataGrid ItemsSource="{Binding CurrentPlayer.Inventory}"
+                              AutoGenerateColumns="False"
+                              HeadersVisibility="Column">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Description"
+                                                Binding="{Binding Name}"
+                                                Width="180"/>
+                            <DataGridTextColumn Header="Quantity"
+                                                Binding="{Binding Price}"
+                                                Width="Auto"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </TabItem>
+                <TabItem Header="Quests">
+                    <DataGrid ItemsSource="{Binding CurrentPlayer.Quests}"
+                              AutoGenerateColumns="False"
+                              HeadersVisibility="Column">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Name"
+                                                Binding="{Binding PlayerQuest.Name}"
+                                                Width="*"/>
+                            <DataGridTextColumn Header="Next"
+                                                Binding="{Binding IsCompleted}"
+                                                Width="Auto"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </TabItem>
+            </TabControl>
+        </Grid>
+        
+        
         <Label Grid.Row="1" Grid.Column="1" Content="Game Message" Background="#BB9CC0"/>
 
         <!-- Item/Item Action Buttons -->
@@ -114,7 +148,10 @@
 
             </Grid>
 
-            
+            <!-- Quests -->
+            <TabItem Header="Quests">
+</TabItem>
+                
             <Label Grid.Row="1" Grid.Column="0" Content="Enemy Location" Background="#5C5470"/>
         </Grid>
         <Label Grid.Row="2" Grid.Column="2" Content="Navigation Buttons" Background="#E78895"/>
