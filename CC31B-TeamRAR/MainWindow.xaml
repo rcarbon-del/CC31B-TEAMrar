@@ -148,9 +148,7 @@
 
             </Grid>
 
-            <!-- Quests -->
-            <TabItem Header="Quests">
-</TabItem>
+           
                 
             <Label Grid.Row="1" Grid.Column="0" Content="Enemy Location" Background="#5C5470"/>
         </Grid>
