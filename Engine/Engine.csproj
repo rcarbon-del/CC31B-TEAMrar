@@ -18,6 +18,13 @@
     <None Remove="Images\Items\SugarCrystals.png" />
     <None Remove="Images\Items\TheJellyofMemories.png" />
     <None Remove="Images\Locations\CrinkleDessert.png" />
+    <None Remove="Images\Monsters\6afe7cf864d8911219c22ba61ccb2bd4.jpg" />
+    <None Remove="Images\Monsters\BurntCookies.png" />
+    <None Remove="Images\Monsters\DoughOgres.png" />
+    <None Remove="Images\Monsters\GiantGingerbreadOgre.png" />
+    <None Remove="Images\Monsters\NotSoSmore.png" />
+    <None Remove="Images\Monsters\OverbakedCupcake.png" />
+    <None Remove="Images\Monsters\TheTeeth.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -45,5 +52,12 @@
 	<Resource Include="Images\Locations\TropicalCheeseBeach.png" />
 	<Resource Include="Images\Locations\CinnamonCoralOcean.png" />
 	<Resource Include="Images\Locations\ChocoLavaIsland.png" />
+	<Resource Include="Images\Monsters\6afe7cf864d8911219c22ba61ccb2bd4.jpg" />
+	<Resource Include="Images\Monsters\BurntCookies.png" />
+	<Resource Include="Images\Monsters\DoughOgres.png" />
+	<Resource Include="Images\Monsters\GiantGingerbreadOgre.png" />
+	<Resource Include="Images\Monsters\NotSoSmore.png" />
+	<Resource Include="Images\Monsters\OverbakedCupcake.png" />
+	<Resource Include="Images\Monsters\TheTeeth.png" />
   </ItemGroup>
 </Project>
