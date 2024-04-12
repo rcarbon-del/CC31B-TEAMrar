@@ -89,7 +89,10 @@ namespace Engine.Models
 
         // 26 Mar 2024 Added Inventory and Quests properties
         public ObservableCollection<GameItem> Inventory { get; set; }
+        public List<GameItem> Weapons =>
+            Inventory.Where(i => i is Weapon).ToList();
         public ObservableCollection<QuestStatus> Quests { get; set; }
+
         public Player()
         {
             Inventory = new ObservableCollection<GameItem>();
