@@ -13,6 +13,8 @@ namespace Engine.Factories
         {
             World newWorld = new World();
 
+
+
             newWorld.AddLocation(0, 0,
             "Matcha Green Office",
             "Home",
@@ -22,21 +24,25 @@ namespace Engine.Factories
             "Fondue Lake",
             "You see a lake!",
             "pack://application:,,,/Engine;component/Images/Locations/FondueLake.png");
+            newWorld.LocationAt(-1, 0).AddMonster(1, 100);
 
             newWorld.AddLocation(-2, 0,
             "Bamboo Cookie Forest",
             "You see a forest!",
             "pack://application:,,,/Engine;component/Images/Locations/BambooCookieForest.png");
+            newWorld.LocationAt(-2, 0).AddMonster(2, 100);
 
             newWorld.AddLocation(-2, 1,
             "White Chocolate Heaven",
             "You see heaven!",
             "pack://application:,,,/Engine;component/Images/Locations/WhiteChocolateHeaven.png");
 
+
             newWorld.AddLocation(-1, -1,
             "White Chocolate Mocha Falls",
             "You see a chocolate waterfall!",
             "pack://application:,,,/Engine;component/Images/Locations/WhiteChocolateMochaFalls.png");
+            newWorld.LocationAt(-1, -1).AddMonster(3, 100);
 
             newWorld.AddLocation(1, 0,
             "Vanilla Ice City",
@@ -47,11 +53,13 @@ namespace Engine.Factories
             "Crinkle Dessert",
             "You see a dessert",
             "pack://application:,,,/Engine;component/Images/Locations/CrinkleDessert.png");
+            newWorld.LocationAt(2, 0).AddMonster(4, 100);
 
             newWorld.AddLocation(1, -1,
             "Tropical Cheese Beach",
             "You see a beach!",
             "pack://application:,,,/Engine;component/Images/Locations/TropicalCheeseBeach.png");
+            newWorld.LocationAt(-1, -1).AddMonster(5, 100);
 
             newWorld.AddLocation(1, -2,
             "Cinnamon Coral Ocean",
@@ -62,8 +70,11 @@ namespace Engine.Factories
             "Choco Lava Island",
             "You see an island",
             "pack://application:,,,/Engine;component/Images/Locations/ChocoLavaIsland.png");
+            newWorld.LocationAt(2, -1).AddMonster(6, 100);
 
             return newWorld;
+
+
         }
     }
 }
