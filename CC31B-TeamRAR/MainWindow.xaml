@@ -10,143 +10,108 @@
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibility"/>
     </Window.Resources>
-        <Grid>
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="250"/>
+            <RowDefinition Height="225"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="250"/>
         </Grid.ColumnDefinitions>
-
-
-        <Label Grid.Row="0" Grid.Column="0" Content="Menu" Background="#FAF0E6"/>
-        <Label Grid.Row="0" Grid.Column="1" Content="" Background="#FAF0E6"/>
-        <Label Grid.Row="0" Grid.Column="2" Content="" Background="#FAF0E6"/>
-
-        <!-- Player Information -->
-        <Grid Grid.Row="1" Grid.Column="0">
+        <!-- Menu -->
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="Menu" Background="AliceBlue"/>
+        <!-- Player stats -->
+        <Grid Grid.Row="1" Grid.Column="0" Background="Aquamarine">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-            <Label Grid.Row="0" Grid.Column="0" Background="#B9B4C7"/>
-            <Label Grid.Row="1" Grid.Column="0" Content="Player Image" Background="#B9B4C7"/>
-
-            <Grid Grid.Row="0" Grid.Column="0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
-                <Label Grid.Row="0" Grid.Column="0" Content="Name"/>
-                <Label Grid.Row="0" Grid.Column="1" Content="{Binding CurrentPlayer.Name}"/>
-                <Label Grid.Row="1" Grid.Column="0" Content="Character Class"/>
-                <Label Grid.Row="1" Grid.Column="1" Content="{Binding CurrentPlayer.CharacterClass}"/>
-                <Label Grid.Row="2" Grid.Column="0" Content="HitPoints"/>
-                <Label Grid.Row="2" Grid.Column="1" Content="{Binding CurrentPlayer.HitPoints}"/>
-                <Label Grid.Row="3" Grid.Column="0" Content="ExperiencePoints"/>
-                <Label Grid.Row="3" Grid.Column="1" Content="{Binding CurrentPlayer.ExperiencePoints}"/>
-                <Label Grid.Row="4" Grid.Column="0" Content="Level"/>
-                <Label Grid.Row="4" Grid.Column="1" Content="{Binding CurrentPlayer.Level}"/>
-                <Label Grid.Row="5" Grid.Column="0" Content="Gold"/>
-                <Label Grid.Row="5" Grid.Column="1" Content="{Binding CurrentPlayer.Gold}"/>
-                
-
-            </Grid>
-        </Grid>
-        <Grid Grid.Row="2" Grid.Column="0"
-              Background="#FFC4C4">
-
-            <TabControl>
-                <TabItem Header="Inventory">
-                    <DataGrid ItemsSource="{Binding CurrentPlayer.Inventory}"
-                              AutoGenerateColumns="False"
-                              HeadersVisibility="Column">
-                        <DataGrid.Columns>
-                            <DataGridTextColumn Header="Description"
-                                                Binding="{Binding Name}"
-                                                Width="180"/>
-                            <DataGridTextColumn Header="Quantity"
-                                                Binding="{Binding Price}"
-                                                Width="Auto"/>
-                        </DataGrid.Columns>
-                    </DataGrid>
-                </TabItem>
-                <TabItem Header="Quests">
-                    <DataGrid ItemsSource="{Binding CurrentPlayer.Quests}"
-                              AutoGenerateColumns="False"
-                              HeadersVisibility="Column">
-                        <DataGrid.Columns>
-                            <DataGridTextColumn Header="Name"
-                                                Binding="{Binding PlayerQuest.Name}"
-                                                Width="*"/>
-                            <DataGridTextColumn Header="Next"
-                                                Binding="{Binding IsCompleted}"
-                                                Width="Auto"/>
-                        </DataGrid.Columns>
-                    </DataGrid>
-                </TabItem>
-            </TabControl>
-        </Grid>
-        
-        
-        <Label Grid.Row="1" Grid.Column="1" Content="Game Message" Background="#BB9CC0"/>
-
-        <!-- Item/Item Action Buttons -->
-        <Grid Grid.Row="2" Grid.Column="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Row="0" Grid.Column="0" Content="Item Image" Background="#E6A4B4"/>
-            <Label Grid.Row="0" Grid.Column="1" Content="Player Image" Background="#E6A4B4"/>
+            <Label Grid.Row="0" Grid.Column="0" Content="Name:"/>
+            <Label Grid.Row="0" Grid.Column="1" Content="{Binding CurrentPlayer.Name}"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="Class:"/>
+            <Label Grid.Row="1" Grid.Column="1" Content="{Binding CurrentPlayer.CharacterClass}"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="Hit points:"/>
+            <Label Grid.Row="2" Grid.Column="1" Content="{Binding CurrentPlayer.HitPoints}"/>
+            <Label Grid.Row="3" Grid.Column="0" Content="Gold:"/>
+            <Label Grid.Row="3" Grid.Column="1" Content="{Binding CurrentPlayer.Gold}"/>
+            <Label Grid.Row="4" Grid.Column="0" Content="XP:"/>
+            <Label Grid.Row="4" Grid.Column="1" Content="{Binding CurrentPlayer.ExperiencePoints}"/>
+            <Label Grid.Row="5" Grid.Column="0" Content="Level:"/>
+            <Label Grid.Row="5" Grid.Column="1" Content="{Binding CurrentPlayer.Level}"/>
         </Grid>
-        <Label Grid.Row="1" Grid.Column="2" Content="Location and Enemy Information" Background="#EAC7C7"/>
-
-        <!--Location and Enemy Information -->
-        <Grid Grid.Row="1" Grid.Column="2">
+        <!-- Gameplay -->
+        <Grid Grid.Row="1" Grid.Column="1"
+              Background="Beige">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <Grid Grid.Row="0" Grid.Column="0" Background="#5C5470">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
 
-                <Border Grid.Row="0">
-                    <TextBlock Grid.Row="0" 
+            <!-- Game Messages -->
+            <Border Grid.Row="0" Grid.Column="0"
+                    Grid.RowSpan="2"
+                    BorderBrush="Gainsboro"
+                    BorderThickness="1">
+                <RichTextBox x:Name="GameMessages"
+                             Background="Beige"
+                             VerticalScrollBarVisibility="Auto">
+                    <RichTextBox.Resources>
+                        <Style TargetType="{x:Type Paragraph}">
+                            <Setter Property="Margin" Value="0"/>
+                        </Style>
+                    </RichTextBox.Resources>
+                </RichTextBox>
+
+            </Border>
+
+            <!-- Location information -->
+            <Border Grid.Row="0" Grid.Column="1"
+                    BorderBrush="Gainsboro"
+                    BorderThickness="1">
+
+                <Grid Margin="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0"
+                               HorizontalAlignment="Center"
+                               Text="{Binding CurrentLocation.Name}"/>
+
+                    <Image Grid.Row="1"
                            HorizontalAlignment="Center"
-                           Text="{Binding CurrentLocation.Name}"/>
-                </Border>
+                           VerticalAlignment="Center"
+                           Height="125"
+                           Width="125"
+                           Source="{Binding CurrentLocation.ImageName}"/>
 
-                <Image Width="125" 
-                       Height="125" 
-                       Grid.Row="1" 
+                    <TextBlock Grid.Row="2"
+                               HorizontalAlignment="Center"
+                               Text="{Binding CurrentLocation.Description}"
+                               TextWrapping="Wrap"/>
+                </Grid>
 
-                       Source="{Binding CurrentLocation.ImageName}"/>
-
-                <TextBlock Grid.Row="2" 
-                           HorizontalAlignment="Center"
-                           Text="{Binding CurrentLocation.Description}"/>
-
-            </Grid>
+            </Border>
 
             <!-- Monster information -->
             <Border Grid.Row="1" Grid.Column="1"
@@ -178,45 +143,85 @@
                 </Grid>
             </Border>
         </Grid>
-            
         <!-- Inventory and Quests -->
         <Grid Grid.Row="2" Grid.Column="0"
               Background="BurlyWood">
-            <Label Grid.Row="1" Grid.Column="0" Content="Enemy Location" Background="#5C5470"/>
+
+            <TabControl>
+                <TabItem Header="Inventory">
+                    <DataGrid ItemsSource="{Binding CurrentPlayer.Inventory}"
+                              AutoGenerateColumns="False"
+                              HeadersVisibility="Column">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Description"
+                                                Binding="{Binding Name}"
+                                                Width="*"/>
+                            <DataGridTextColumn Header="Price"
+                                                Binding="{Binding Price}"
+                                                Width="Auto"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </TabItem>
+                <TabItem Header="Quests">
+                    <DataGrid ItemsSource="{Binding CurrentPlayer.Quests}"
+                              AutoGenerateColumns="False"
+                              HeadersVisibility="Column">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Name"
+                                                Binding="{Binding PlayerQuest.Name}"
+                                                Width="*"/>
+                            <DataGridTextColumn Header="Done?"
+                                                Binding="{Binding IsCompleted}"
+                                                Width="Auto"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </TabItem>
+            </TabControl>
         </Grid>
-        <Label Grid.Row="2" Grid.Column="2" Content="Navigation Buttons" Background="#E78895"/>
-        <Grid Grid.Row="2" Grid.Column="2">
+        <!-- Action controls -->
+        <Grid Grid.Row="2" Grid.Column="1"
+              Background="Lavender">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="255" />
             </Grid.ColumnDefinitions>
-            <Button Grid.Row="0" Grid.Column="1"
-                    Height="25" Width="65" Margin="8"
-                    Content="North"
-                    Click="OnClick_MoveNorth"
-                    Visibility="{Binding HasLocationToNorth, Converter={StaticResource BooleanToVisibility}}"/>
-            <Button Grid.Row="1" Grid.Column="0" 
-                    Height="25" Width="65" Margin="8"
-                    Content="West"
-                    Click="OnClick_MoveWest"
-                    Visibility="{Binding HasLocationToWest, Converter={StaticResource BooleanToVisibility}}"/>
-            <Button Grid.Row="1" Grid.Column="2" 
-                    Height="25" Width="65" Margin="8"
-                    Content="East"
-                    Click="OnClick_MoveEast"
-                    Visibility="{Binding HasLocationToEast, Converter={StaticResource BooleanToVisibility}}"/>
-            <Button Grid.Row="2" Grid.Column="1" 
-                    Height="25" Width="65" Margin="8"
-                    Content="South"
-                    Click="OnClick_MoveSouth"
-                    Visibility="{Binding HasLocationToSouth, Converter={StaticResource BooleanToVisibility}}"/>
+
+            <!-- Movement Controls -->
+            <Grid Grid.Row="0" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="1" 
+                        Height="25" Width="65" Margin="10" 
+                        Click="OnClick_MoveNorth"
+                        Visibility="{Binding HasLocationToNorth, Converter={StaticResource BooleanToVisibility}}"
+                        Content="North"/>
+                <Button Grid.Row="1" Grid.Column="0" 
+                        Height="25" Width="65" Margin="10" 
+                        Click="OnClick_MoveWest"
+                        Visibility="{Binding HasLocationToWest, Converter={StaticResource BooleanToVisibility}}"
+                        Content="West"/>
+                <Button Grid.Row="1" Grid.Column="2" 
+                        Height="25" Width="65" Margin="10" 
+                        Click="OnClick_MoveEast"
+                        Visibility="{Binding HasLocationToEast, Converter={StaticResource BooleanToVisibility}}"
+                        Content="East"/>
+                <Button Grid.Row="2" Grid.Column="1" 
+                        Height="25" Width="65" Margin="10" 
+                        Click="OnClick_MoveSouth"
+                        Visibility="{Binding HasLocationToSouth, Converter={StaticResource BooleanToVisibility}}"
+                        Content="South"/>
+            </Grid>
         </Grid>
     </Grid>
-    
 </Window>

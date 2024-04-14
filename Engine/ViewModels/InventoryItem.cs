@@ -6,7 +6,7 @@ namespace Engine.ViewModels
     internal class InventoryItem : GameItem
     {
         private int quantity;
-        public int Quantity;
+        public int Quantity
         {
             get { return quantity; }
             set
@@ -21,11 +21,11 @@ namespace Engine.ViewModels
             throw new NotImplementedException();
         }
 
-        //public InventoryItem(GameItem gameItem, int quantity)
-            //:base(gameItem.ItemTypeID, gameItem.Name, gameItem.Price, gameItem.Description, gameItem.ImageName)
-        //{
-           // Quantity = quantity;
-       // }//
+        public InventoryItem(GameItem gameItem, int quantity)
+            : base(gameItem.ItemTypeID, gameItem.Name, gameItem.Price, gameItem.ImageName)
+        {
+            Quantity = quantity;
+       }
 
         public void useItem()
         {
