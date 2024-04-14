@@ -12,13 +12,15 @@ namespace Engine.Models
         public string Name { get; set; }
         public int Price { get; set; }
         public string ImageName { get; set; }
+        public bool IsUnique { get; set; }
 
-        public GameItem(int itemTypeID, string name, int price, string imageName)
+        public GameItem(int itemTypeID, string name, int price, string imageName, bool isUnique = false)
         {
             ItemTypeID = itemTypeID;
             Name = name;
             Price = price;
             ImageName = imageName;
+            IsUnique = isUnique;
         }
         public GameItem Clone()
         {
