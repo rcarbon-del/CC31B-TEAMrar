@@ -42,7 +42,9 @@ namespace Engine.Factories
             "White Chocolate Mocha Falls",
             "You see a chocolate waterfall!",
             "WhiteChocolateMochaFalls.png");
-            newWorld.LocationAt(-1, -1).AddMonster(3, 100);
+            
+            newWorld.LocationAt(-1, -1).TraderHere =
+                TraderFactory.GetTraderByName("Farmer Ted");
 
             newWorld.AddLocation(1, 0,
             "Vanilla Ice City",
@@ -59,7 +61,7 @@ namespace Engine.Factories
             "Tropical Cheese Beach",
             "You see a beach!",
             "TropicalCheeseBeach.png");
-            newWorld.LocationAt(-1, -1).AddMonster(5, 100);
+            newWorld.LocationAt(1, -1).AddMonster(5, 100);
 
             newWorld.AddLocation(1, -2,
             "Cinnamon Coral Ocean",
@@ -71,6 +73,8 @@ namespace Engine.Factories
             "You see an island",
             "ChocoLavaIsland.png");
             newWorld.LocationAt(2, -2).AddMonster(6, 100);
+
+            
 
             return newWorld;
 
