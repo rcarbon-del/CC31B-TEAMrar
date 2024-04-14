@@ -19,7 +19,7 @@ namespace Engine.Models
             ItemTypeID = itemTypeID;
             Name = name;
             Price = price;
-            ImageName = imageName;
+            ImageName = $"/Engine;component/Images/Locations/{imageName}";
             IsUnique = isUnique;
         }
         public GameItem Clone()
