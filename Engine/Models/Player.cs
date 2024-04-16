@@ -8,35 +8,29 @@ namespace Engine.Models
     {
         private string _characterClass;
         private int _experiencePoints;
-        private int _level;
         public string CharacterClass
         {
             get { return _characterClass; }
             set
             {
                 _characterClass = value;
-                OnPropertyChanged(nameof(CharacterClass));
+                OnPropertyChanged();
             }
         }
         public int ExperiencePoints
         {
             get { return _experiencePoints; }
-            set
+            private set
             {
                 _experiencePoints = value;
-                OnPropertyChanged(nameof(ExperiencePoints));
+                OnPropertyChanged();
+
+                SetLevelAndMaximumHitPoints();
             }
         }
-        public int Level
-        {
-            get { return _level; }
-            set
-            {
-                _level = value;
-                OnPropertyChanged(nameof(Level));
-            }
-        }
-        public ObservableCollection<QuestStatus> Quests { get; set; }
+        public ObservableCollection<QuestStatus> Quests { get; }
+
+        public event EventHandler OnLeveledUp;
         public Player(string name, string characterClass, int experiencePoints,
                       int maximumHitPoints, int currentHitPoints, int gold) :
             base(name, maximumHitPoints, currentHitPoints, gold)
@@ -55,6 +49,20 @@ namespace Engine.Models
                 }
             }
             return true;
+        }
+        public void AddExperience(int experiencePoints)
+        {
+            ExperiencePoints += experiencePoints;
+        }
+        private void SetLevelAndMaximumHitPoints()
+        {
+            int originalLevel = Level;
+            Level = (ExperiencePoints / 100) + 1;
+            if (Level != originalLevel)
+            {
+                MaximumHitPoints = Level * 10;
+                OnLeveledUp?.Invoke(this, System.EventArgs.Empty);
+            }
         }
     }
 }
