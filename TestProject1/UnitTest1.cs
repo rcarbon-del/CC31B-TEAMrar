@@ -1,7 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-
-namespace TestEngine
+namespace TestProject1
 {
     [TestClass]
     public class UnitTest1
