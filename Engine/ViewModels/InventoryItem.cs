@@ -20,9 +20,9 @@ namespace Engine.ViewModels
         {
             throw new NotImplementedException();
         }
-
+        //Not sure about the ItemCategory.miscellaneous
         public InventoryItem(GameItem gameItem, int quantity)
-            : base(gameItem.ItemTypeID, gameItem.Name, gameItem.Price, gameItem.ImageName)
+            : base(ItemCategory.Miscellaneous, gameItem.ItemTypeID, gameItem.Name, gameItem.Price, gameItem.ImageName)
         {
             Quantity = quantity;
        }
