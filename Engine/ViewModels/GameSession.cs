@@ -112,7 +112,7 @@ namespace Engine.ViewModels
                 10,
                 0,
                 10,
-                1000000000
+                10
             );
             CurrentPlayer.AddItemToInventory(ItemFactory.CreateGameItem(72));
             CurrentPlayer.AddItemToInventory(ItemFactory.CreateGameItem(2001));

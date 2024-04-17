@@ -18,6 +18,21 @@ namespace Engine.Factories
             prophet.AddItemToInventory(ItemFactory.CreateGameItem(67));
             Trader butter = new Trader("Green Tea Butter");
             butter.AddItemToInventory(ItemFactory.CreateGameItem(81));
+            butter.AddItemToInventory(ItemFactory.CreateGameItem(81));
+            butter.AddItemToInventory(ItemFactory.CreateGameItem(81));
+            butter.AddItemToInventory(ItemFactory.CreateGameItem(81));
+            butter.AddItemToInventory(ItemFactory.CreateGameItem(81));
+            butter.AddItemToInventory(ItemFactory.CreateGameItem(81));
+            butter.AddItemToInventory(ItemFactory.CreateGameItem(81));
+            butter.AddItemToInventory(ItemFactory.CreateGameItem(81));
+            butter.AddItemToInventory(ItemFactory.CreateGameItem(81));
+            butter.AddItemToInventory(ItemFactory.CreateGameItem(81));
+            butter.AddItemToInventory(ItemFactory.CreateGameItem(81));
+            butter.AddItemToInventory(ItemFactory.CreateGameItem(81));
+            butter.AddItemToInventory(ItemFactory.CreateGameItem(81));
+            butter.AddItemToInventory(ItemFactory.CreateGameItem(81));
+            butter.AddItemToInventory(ItemFactory.CreateGameItem(81));
+            butter.AddItemToInventory(ItemFactory.CreateGameItem(81));
             Trader macaroon = new Trader("Macaroon Cookie");
             macaroon.AddItemToInventory(ItemFactory.CreateGameItem(69));
 
