@@ -19,6 +19,8 @@ namespace Engine.Factories
             "Matcha Green Office",
             "Home",
             "MatchaGreenOffice.png");
+            newWorld.LocationAt(0, 0).TraderHere =
+                TraderFactory.GetTraderByName("Green Tea Butter");
             newWorld.LocationAt(0, 0).QuestsAvailableHere.Add(QuestFactory.GetQuestByID(3));
 
             newWorld.AddLocation(-1, 0,
@@ -39,6 +41,8 @@ namespace Engine.Factories
             "White Chocolate Heaven",
             "You see heaven!",
             "WhiteChocolateHeaven.png");
+            newWorld.LocationAt(-2, 1).TraderHere =
+                TraderFactory.GetTraderByName("Golden Propet Cookie");
 
 
             newWorld.AddLocation(-1, -1,
@@ -47,13 +51,15 @@ namespace Engine.Factories
             "WhiteChocolateMochaFalls.png");
             
             newWorld.LocationAt(-1, -1).TraderHere =
-                TraderFactory.GetTraderByName("Farmer Ted");
+                TraderFactory.GetTraderByName("White Lily Cookie");
             newWorld.LocationAt(-1, -1).QuestsAvailableHere.Add(QuestFactory.GetQuestByID(6));
 
             newWorld.AddLocation(1, 0,
             "Vanilla Ice City",
             "You see neighboring city!",
             "VanillaIceCity.png");
+            newWorld.LocationAt(1, 0).TraderHere =
+                TraderFactory.GetTraderByName("Macaroon Cookie");
 
             newWorld.AddLocation(2, 0,
             "Crinkle Dessert",
@@ -79,6 +85,8 @@ namespace Engine.Factories
             "Choco Lava Island",
             "You see an island",
             "ChocoLavaIsland.png");
+            newWorld.LocationAt(2, -2).TraderHere =
+                TraderFactory.GetTraderByName("Chocolate Pirate Cookie");
             newWorld.LocationAt(2, -2).AddMonster(6, 100);
             newWorld.LocationAt(2, -2).QuestsAvailableHere.Add(QuestFactory.GetQuestByID(8));
 
