@@ -16,8 +16,6 @@ namespace Engine.Models
         private GameItem _currentWeapon;
         private GameItem _currentConsumable;
 
-
-
         public string Name
         {
             get { return _name; }
@@ -80,6 +78,7 @@ namespace Engine.Models
                 OnPropertyChanged();
             }
         }
+        public string WeaponImage => "{CurrentWeapon.ImageName}";
             public GameItem CurrentConsumable
         {
             get => _currentConsumable;
