@@ -22,15 +22,17 @@ namespace Engine.Factories
             BuildMiscellaneousItem(69, "Crystal Jam", 10, "CrystalJam.png");
             BuildMiscellaneousItem(70, "Golden Croissant", 10, "GoldenCroissant.png");
             BuildMiscellaneousItem(71, "The Jelly of Memories", 10, "TheJellyOfMemories.png");
-            BuildMiscellaneousItem(72, "Wood for Bridge Repair", 10, "WoodForBridgeRepair.png");
-            BuildMiscellaneousItem(73, "Mayor's Special Butter", 10, "MayorsSpecialButter.png");
-            BuildMiscellaneousItem(74, "Special Ingredient", 10, "SpecialIngredient.png");
-            BuildMiscellaneousItem(75, "Treasure Map", 10, "TreasureMap.png");
-            BuildMiscellaneousItem(76, "Cookie Dough Spell", 10, "CookieDoughSpell.png");
-
 
             BuildWeapon(72, "Cookie Axe", 10, "CookieAxe.png", 2, 7);
             BuildWeapon(73, "Cookie Gun", 10, "CookieGun.png", 2, 7);
+
+            BuildMiscellaneousItem(74, "Wood for Bridge Repair", 10, "WoodForBridgeRepair.png");
+            BuildMiscellaneousItem(75, "Mayor's Special Butter", 10, "MayorsSpecialButter.png");
+            BuildMiscellaneousItem(76, "Special Ingredient", 10, "SpecialIngredient.png");
+            BuildMiscellaneousItem(77, "Treasure Map", 10, "TreasureMap.png");
+            BuildMiscellaneousItem(78, "Cookie Dough Spell", 10, "CookieDoughSpell.png");
+            BuildMiscellaneousItem(79, "Choco Pirate's Letter", 10, "ChocoPirateLetter.png");
+            BuildMiscellaneousItem(80, "Matcha Tea Time Alliance Membership Card", 10, "MatchaTeaTimeAllianceCard.png");
 
             BuildWeapon(1501, "Sugar of Death", 0, "sugarOfDeath.jpg", 0, 2); // gingerbread : sugarOfDeath
             BuildWeapon(1502, "MolDough", 0, "molDough.jpg", 0, 2);//doughogres : molDough
