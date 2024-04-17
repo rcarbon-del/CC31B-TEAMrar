@@ -147,8 +147,8 @@
                               HeadersVisibility="Column">
                         <DataGrid.Columns>
                             <DataGridTemplateColumn Header="Image"
-                                                    Width="SizeToCells" IsReadOnly="True"
-                                                    >
+                                                    Width="SizeToCells" 
+                                                    IsReadOnly="True">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
                                         <Image Source="{Binding Item.ImageName}"

@@ -15,22 +15,24 @@ namespace Engine.Factories
 
             List<ItemQuantity> itemsToComplete1 = new List<ItemQuantity>();
             List<ItemQuantity> rewardItems1 = new List<ItemQuantity>();
-            itemsToComplete1.Add(new ItemQuantity(65, 5));
+            itemsToComplete1.Add(new ItemQuantity(79, 1));
             rewardItems1.Add(new ItemQuantity(64, 1000));
+            rewardItems1.Add(new ItemQuantity(80, 1000));
 
             List<ItemQuantity> itemsToComplete2 = new List<ItemQuantity>();
             List<ItemQuantity> rewardItems2 = new List<ItemQuantity>();
-            itemsToComplete2.Add(new ItemQuantity(65, 5));
-            rewardItems2.Add(new ItemQuantity(64, 1000));
+            itemsToComplete2.Add(new ItemQuantity(74, 10));
+            rewardItems2.Add(new ItemQuantity(65, 100));
 
             List<ItemQuantity> itemsToComplete3 = new List<ItemQuantity>();
             List<ItemQuantity> rewardItems3 = new List<ItemQuantity>();
-            itemsToComplete3.Add(new ItemQuantity(65, 5));
+            itemsToComplete3.Add(new ItemQuantity(80, 1));
+            rewardItems3.Add(new ItemQuantity(75, 1));
             rewardItems3.Add(new ItemQuantity(64, 1000));
 
             List<ItemQuantity> itemsToComplete4 = new List<ItemQuantity>();
             List<ItemQuantity> rewardItems4 = new List<ItemQuantity>();
-            itemsToComplete4.Add(new ItemQuantity(65, 5));
+            itemsToComplete4.Add(new ItemQuantity(76, 5));
             rewardItems4.Add(new ItemQuantity(64, 1000));
 
             List<ItemQuantity> itemsToComplete5 = new List<ItemQuantity>();
