@@ -28,6 +28,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\Items\bambooGrinder.png" />
+    <Resource Include="Images\Items\sugarCane.jpg" />
+    <Resource Include="Images\Items\SugarCubes.jpg" />
     <Resource Include="Images\Items\InsigniaCookieTreasure.png" />
   </ItemGroup>
 
@@ -59,5 +62,11 @@
 	<Resource Include="Images\Monsters\NotSoSmore.png" />
 	<Resource Include="Images\Monsters\OverbakedCupcake.png" />
 	<Resource Include="Images\Monsters\TheTeeth.png" />
+	<Resource Include="Images\Items\Cavittack.jpg" />
+	<Resource Include="Images\Items\cookieCutter.jpg" />
+	<Resource Include="Images\Items\darkCrustMagic.jpg" />
+	<Resource Include="Images\Items\MolDough.jpg" />
+	<Resource Include="Images\Items\stick.png" />
+	<Resource Include="Images\Items\sugarOfDeath.jpg" />
   </ItemGroup>
 </Project>

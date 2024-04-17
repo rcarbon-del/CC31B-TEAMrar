@@ -26,12 +26,12 @@ namespace Engine.Factories
             BuildWeapon(72, "Cookie Axe", 10, "CookieAxe.png", 2, 7);
             BuildWeapon(73, "Cookie Gun", 10, "CookieGun.png", 2, 7);
 
-            BuildWeapon(1501, "Sugar of Death", 0, "", 0, 2); // gingerbread : sugarOfDeath
-            BuildWeapon(1502, "MolDough", 0, "", 0, 2);//doughogres : molDough
-            BuildWeapon(1503, "Cookie Cutter", 0, "", 0, 2); //burntCookies : cookieCutter
-            BuildWeapon(1504, "Dark Crust Magic", 0, "", 0, 2);//overbakedCupcake: darkCrustMagic
-            BuildWeapon(1505, "Stick", 0, "", 0, 2);//notsoSmore : stick
-            BuildWeapon(1506, "Cavittack", 0, "", 0, 2); //theTeeth : Cavittack
+            BuildWeapon(1501, "Sugar of Death", 0, "sugarOfDeath.jpg", 0, 2); // gingerbread : sugarOfDeath
+            BuildWeapon(1502, "MolDough", 0, "molDough.jpg", 0, 2);//doughogres : molDough
+            BuildWeapon(1503, "Cookie Cutter", 0, "cookieCutter.jpg", 0, 2); //burntCookies : cookieCutter
+            BuildWeapon(1504, "Dark Crust Magic", 0, "darkCrustMagic.jpg", 0, 2);//overbakedCupcake: darkCrustMagic
+            BuildWeapon(1505, "Stick", 0, "stick.jpg", 0, 2);//notsoSmore : stick
+            BuildWeapon(1506, "Cavittack", 0, "Cavittack.jpg", 0, 2); //theTeeth : Cavittack
 
             BuildHealingItem(2001, "SugarCubes", 5, 2, ""); //SugarCubes
 
