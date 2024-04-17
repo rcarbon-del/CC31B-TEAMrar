@@ -29,14 +29,14 @@ namespace Engine.Factories
             BuildWeapon(1501, "Sugar of Death", 0, "", 0, 2); // gingerbread
             BuildWeapon(1502, "MolDough", 0, "", 0, 2);//doughogres
             BuildWeapon(1503, "Cookie Cutter", 0, "", 0, 2); //burntCookies
-            BuildWeapon(1504, "Dark Crust", 0, "", 0, 2);//overbakedCupcake
+            BuildWeapon(1504, "Dark Crust Magic", 0, "", 0, 2);//overbakedCupcake
             BuildWeapon(1505, "Stick", 0, "", 0, 2);//notsoSmore
-            BuildWeapon(1506, "Cavittack", 0, "", 0, 2); //theTeeth
+            BuildWeapon(1506, "Cavittack", 0, "", 0, 2); //theTeeth 
 
             BuildHealingItem(2001, "SugarCubes", 5, 2, "");
 
             BuildMiscellaneousItem(3001, "Sugar Cane", 1, "");
-            BuildMiscellaneousItem(3002, "Bamboo", 1, "");
+            BuildMiscellaneousItem(3002, "Bamboo Grinder", 1, "");
 
         }
         public static GameItem CreateGameItem(int itemTypeID)
