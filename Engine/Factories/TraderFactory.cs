@@ -17,9 +17,9 @@ namespace Engine.Factories
             Trader prophet = new Trader("Golden Prophet Cookie");
             prophet.AddItemToInventory(ItemFactory.CreateGameItem(67));
             Trader butter = new Trader("Green Tea Butter");
-            butter.AddItemToInventory(ItemFactory.CreateGameItem(73));
+            butter.AddItemToInventory(ItemFactory.CreateGameItem(81));
             Trader macaroon = new Trader("Macaroon Cookie");
-            macaroon.AddItemToInventory(ItemFactory.CreateGameItem(72));
+            macaroon.AddItemToInventory(ItemFactory.CreateGameItem(69));
 
             AddTraderToList(whitelily);
             AddTraderToList(chocopirate);

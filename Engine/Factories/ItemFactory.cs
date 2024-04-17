@@ -33,6 +33,7 @@ namespace Engine.Factories
             BuildMiscellaneousItem(78, "Cookie Dough Spell", 10, "CookieDoughSpell.png");
             BuildMiscellaneousItem(79, "Choco Pirate's Letter", 10, "ChocoPirateLetter.png");
             BuildMiscellaneousItem(80, "Matcha Tea Time Alliance Membership Card", 10, "MatchaTeaTimeAllianceCard.png");
+            BuildMiscellaneousItem(81, "Not so Special Butter", 10, "NotSoSpecialButter.png");
 
             BuildWeapon(1501, "Sugar of Death", 0, "sugarOfDeath.jpg", 0, 2); // gingerbread : sugarOfDeath
             BuildWeapon(1502, "MolDough", 0, "molDough.jpg", 0, 2);//doughogres : molDough
