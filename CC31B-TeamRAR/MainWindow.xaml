@@ -34,6 +34,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
@@ -50,7 +51,9 @@
             <Label Grid.Row="4" Grid.Column="0" Content="XP:"/>
             <Label Grid.Row="4" Grid.Column="1" Content="{Binding CurrentPlayer.ExperiencePoints}"/>
             <Label Grid.Row="5" Grid.Column="0" Content="Level:"/>
-            <Label Grid.Row="5" Grid.Column="1" Content="{Binding CurrentPlayer.Level}"/>
+            <Label Grid.Row="5" Grid.Column="1" Content="{Binding CurrentPlayer.Level}"/><Label Grid.Row="5" Grid.Column="0" Content="Level:"/>
+            <Label Grid.Row="6" Grid.Column="0" Content="Current Weapon: "/>
+            <Image Grid.Row="7" Height="100" Width="100" Source="{Binding CurrentPlayer.CurrentWeapon.ImageName}"/>
         </Grid>
         <!-- Gameplay -->
         <Grid Grid.Row="1" Grid.Column="1" Background="#9B76C1">
