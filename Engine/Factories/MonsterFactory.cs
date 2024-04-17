@@ -15,7 +15,7 @@ namespace Engine.Factories
             {
                 case 1:
                     Monster gingerbread =
-                        new Monster("Giant Gingerbread Ogre ", "GiantGingerbreadOgre.png", 4, 4, 5, 1, 100, 10);
+                        new Monster("Giant Gingerbread Ogre ", "GiantGingerbreadOgre.png", 100, 50, 5, 1, 100, 10);
 
                     gingerbread.CurrentWeapon = ItemFactory.CreateGameItem(1501);
 
@@ -24,7 +24,7 @@ namespace Engine.Factories
                     return gingerbread;
                 case 2:
                     Monster doughogres =
-                        new Monster("Dough Ogres", "DoughOgres.png", 5, 5, 5, 1, 100, 5);
+                        new Monster("Dough Ogres", "DoughOgres.png", 50, 5, 5, 1, 100, 5);
 
                     doughogres.CurrentWeapon = ItemFactory.CreateGameItem(1502);
 
@@ -42,7 +42,7 @@ namespace Engine.Factories
                     return burntCookies;
                 case 4:
                     Monster overbakedCupcake =
-                        new Monster("Overbaked Cupcake", "OverbakedCupcake.png", 5, 5, 5, 1, 100, 15);
+                        new Monster("Overbaked Cupcake", "OverbakedCupcake.png", 10, 5, 5, 1, 100, 15);
 
                     overbakedCupcake.CurrentWeapon = ItemFactory.CreateGameItem(1504);
 
@@ -51,7 +51,7 @@ namespace Engine.Factories
                     return overbakedCupcake;
                 case 5:
                     Monster notsoSmore =
-                        new Monster("notsoSmore", "NotSoSmore.png", 4, 4, 5, 1, 100, 10);
+                        new Monster("notsoSmore", "NotSoSmore.png", 50, 25, 5, 1, 100, 10);
 
                     notsoSmore.CurrentWeapon = ItemFactory.CreateGameItem(1505);
 
@@ -60,7 +60,7 @@ namespace Engine.Factories
                     return notsoSmore;
                 case 6:
                     Monster theTeeth =
-                        new Monster("The Teeth", "TheTeeth.png", 10, 10, 10, 3, 100, 20);
+                        new Monster("The Teeth", "TheTeeth.png", 1000, 500, 10, 3, 100, 20);
 
                     theTeeth.CurrentWeapon = ItemFactory.CreateGameItem(1506);
 
