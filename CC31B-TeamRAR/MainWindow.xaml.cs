@@ -46,6 +46,10 @@ namespace CC31B_TeamRAR
         {
             _gameSession.AttackCurrentMonster();
         }
+        private void OnClick_UseCurrentConsumable(object sender, RoutedEventArgs e)
+        {
+            _gameSession.UseCurrentConsumable();
+        }
         private void OnGameMessageRaised(object sender, GameMessageEventArgs e)
         {
             GameMessages.Document.Blocks.Add(new Paragraph(new Run(e.Message)));
@@ -57,6 +61,11 @@ namespace CC31B_TeamRAR
             tradeScreen.Owner = this;
             tradeScreen.DataContext = _gameSession;
             tradeScreen.ShowDialog();
+        }
+        private void OnClick_Craft(object sender, RoutedEventArgs e)
+        {
+            Recipe recipe = ((FrameworkElement)sender).DataContext as Recipe;
+            _gameSession.CraftItemUsing(recipe);
         }
     }
 }

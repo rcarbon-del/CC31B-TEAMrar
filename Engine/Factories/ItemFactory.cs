@@ -22,8 +22,21 @@ namespace Engine.Factories
             BuildMiscellaneousItem(69, "Crystal Jam", 10, "CrystalJam.png");
             BuildMiscellaneousItem(70, "Golden Croissant", 10, "GoldenCroissant.png");
             BuildMiscellaneousItem(71, "The Jelly of Memories", 10, "TheJellyOfMemories.png");
+
             BuildWeapon(72, "Cookie Axe", 10, "CookieAxe.png", 2, 7);
             BuildWeapon(73, "Cookie Gun", 10, "CookieGun.png", 2, 7);
+
+            BuildWeapon(1501, "Sugar of Death", 0, 0, 2); // gingerbread
+            BuildWeapon(1502, "MolDough", 0, 0, 2);//doughogres
+            BuildWeapon(1503, "Cookie Cutter", 0, 0, 2); //burntCookies
+            BuildWeapon(1504, "Dark Crust", 0, 0, 2);//overbakedCupcake
+            BuildWeapon(1505, "Stick", 0, 0, 2);//notsoSmore
+            BuildWeapon(1506, "Cavittack", 0, 0, 2); //theTeeth
+
+            BuildHealingItem(2001, "SugarCubes", 5, 2);
+
+            BuildMiscellaneousItem(3001, "Sugar Cane", 1);
+            BuildMiscellaneousItem(3002, "Bamboo", 1);
 
         }
         public static GameItem CreateGameItem(int itemTypeID)
@@ -40,6 +53,16 @@ namespace Engine.Factories
             GameItem weapon = new GameItem(GameItem.ItemCategory.Weapon, id, name, price, ImageName, true);
             weapon.Action = new AttackWithWeapon(weapon, minimumDamage, maximumDamage);
             _standardGameItems.Add(weapon);
+        }
+        private static void BuildHealingItem(int id, string name, int price, int hitPointsToHeal)
+        {
+            GameItem item = new GameItem(GameItem.ItemCategory.Consumable, id, name, price);
+            item.Action = new Heal(item, hitPointsToHeal);
+            _standardGameItems.Add(item);
+        }
+        public static string ItemName(int itemTypeID)
+        {
+            return _standardGameItems.FirstOrDefault(i => i.ItemTypeID == itemTypeID)?.Name ?? "";
         }
     }
 }
