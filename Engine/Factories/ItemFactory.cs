@@ -23,8 +23,8 @@ namespace Engine.Factories
             BuildMiscellaneousItem(70, "Golden Croissant", 10, "GoldenCroissant.png");
             BuildMiscellaneousItem(71, "The Jelly of Memories", 10, "TheJellyOfMemories.png");
 
-            BuildWeapon(72, "Cookie Axe", 10, "CookieAxe.png", 2, 7);
-            BuildWeapon(73, "Cookie Gun", 10, "CookieGun.png", 2, 7);
+            BuildWeapon(1001, "Cookie Axe", 10, "CookieAxe.png", 2, 7);
+            BuildWeapon(1002, "Cookie Gun", 10, "CookieGun.png", 2, 7);
 
             BuildWeapon(1501, "Sugar of Death", 0, "sugarOfDeath.jpg", 0, 2); // gingerbread : sugarOfDeath
             BuildWeapon(1502, "MolDough", 0, "molDough.jpg", 0, 2);//doughogres : molDough
