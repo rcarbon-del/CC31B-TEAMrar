@@ -15,42 +15,42 @@ namespace Engine.Factories
 
             List<ItemQuantity> itemsToComplete1 = new List<ItemQuantity>();
             List<ItemQuantity> rewardItems1 = new List<ItemQuantity>();
-            itemsToComplete1.Add(new ItemQuantity(9001, 5));
+            itemsToComplete1.Add(new ItemQuantity(65, 5));
             rewardItems1.Add(new ItemQuantity(64, 1000));
 
             List<ItemQuantity> itemsToComplete2 = new List<ItemQuantity>();
             List<ItemQuantity> rewardItems2 = new List<ItemQuantity>();
-            itemsToComplete2.Add(new ItemQuantity(9001, 5));
+            itemsToComplete2.Add(new ItemQuantity(65, 5));
             rewardItems2.Add(new ItemQuantity(64, 1000));
 
             List<ItemQuantity> itemsToComplete3 = new List<ItemQuantity>();
             List<ItemQuantity> rewardItems3 = new List<ItemQuantity>();
-            itemsToComplete3.Add(new ItemQuantity(9001, 5));
+            itemsToComplete3.Add(new ItemQuantity(65, 5));
             rewardItems3.Add(new ItemQuantity(64, 1000));
 
             List<ItemQuantity> itemsToComplete4 = new List<ItemQuantity>();
             List<ItemQuantity> rewardItems4 = new List<ItemQuantity>();
-            itemsToComplete4.Add(new ItemQuantity(9001, 5));
+            itemsToComplete4.Add(new ItemQuantity(65, 5));
             rewardItems4.Add(new ItemQuantity(64, 1000));
 
             List<ItemQuantity> itemsToComplete5 = new List<ItemQuantity>();
             List<ItemQuantity> rewardItems5 = new List<ItemQuantity>();
-            itemsToComplete5.Add(new ItemQuantity(9001, 5));
+            itemsToComplete5.Add(new ItemQuantity(65, 5));
             rewardItems5.Add(new ItemQuantity(64, 1000));
 
             List<ItemQuantity> itemsToComplete6 = new List<ItemQuantity>();
             List<ItemQuantity> rewardItems6 = new List<ItemQuantity>();
-            itemsToComplete6.Add(new ItemQuantity(9001, 5));
+            itemsToComplete6.Add(new ItemQuantity(65, 5));
             rewardItems6.Add(new ItemQuantity(64, 1000));
 
             List<ItemQuantity> itemsToComplete7 = new List<ItemQuantity>();
             List<ItemQuantity> rewardItems7 = new List<ItemQuantity>();
-            itemsToComplete7.Add(new ItemQuantity(9001, 5));
+            itemsToComplete7.Add(new ItemQuantity(65, 5));
             rewardItems7.Add(new ItemQuantity(64, 1000));
 
             List<ItemQuantity> itemsToComplete8 = new List<ItemQuantity>();
             List<ItemQuantity> rewardItems8 = new List<ItemQuantity>();
-            itemsToComplete8.Add(new ItemQuantity(9001, 5));
+            itemsToComplete8.Add(new ItemQuantity(65, 5));
             rewardItems8.Add(new ItemQuantity(64, 1000));
 
             _quests.Add(new Quest(1,

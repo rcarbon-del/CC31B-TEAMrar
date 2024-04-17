@@ -23,8 +23,8 @@ namespace Engine.Factories
             BuildMiscellaneousItem(70, "Golden Croissant", 10, "GoldenCroissant.png");
             BuildMiscellaneousItem(71, "The Jelly of Memories", 10, "TheJellyOfMemories.png");
 
-            BuildWeapon(1001, "Cookie Axe", 10, "CookieAxe.png", 2, 7);
-            BuildWeapon(1002, "Cookie Gun", 10, "CookieGun.png", 2, 7);
+            BuildWeapon(72, "Cookie Axe", 10, "CookieAxe.png", 2, 7);
+            BuildWeapon(73, "Cookie Gun", 10, "CookieGun.png", 2, 7);
 
             BuildWeapon(1501, "Sugar of Death", 0, "sugarOfDeath.jpg", 0, 2); // gingerbread : sugarOfDeath
             BuildWeapon(1502, "MolDough", 0, "molDough.jpg", 0, 2);//doughogres : molDough
@@ -33,10 +33,10 @@ namespace Engine.Factories
             BuildWeapon(1505, "Stick", 0, "stick.jpg", 0, 2);//notsoSmore : stick
             BuildWeapon(1506, "Cavittack", 0, "Cavittack.jpg", 0, 2); //theTeeth : Cavittack
 
-            BuildHealingItem(2001, "SugarCubes", 5, 2, ""); //SugarCubes
+            BuildHealingItem(2001, "SugarCubes", 5, 2, "SugarCubes.jpg"); //SugarCubes
 
-            BuildMiscellaneousItem(3001, "Sugar Cane", 1, ""); // sugarCane
-            BuildMiscellaneousItem(3002, "Bamboo Grinder", 1, "");// bambooGrinder
+            BuildMiscellaneousItem(3001, "Sugar Cane", 1, "sugarCane.jpg"); // sugarCane
+            BuildMiscellaneousItem(3002, "Bamboo Grinder", 1, "bambooGrinder.jpg");// bambooGrinder
 
         }
         public static GameItem CreateGameItem(int itemTypeID)
