@@ -79,6 +79,7 @@ namespace Engine.Models
                 }
                 OnPropertyChanged();
             }
+        }
             public GameItem CurrentConsumable
         {
             get => _currentConsumable;
@@ -177,7 +178,7 @@ namespace Engine.Models
                 GroupedInventory.First(gi => gi.Item.ItemTypeID == item.ItemTypeID).Quantity++;
             }
             OnPropertyChanged(nameof(Weapons));
-            OnPropertyChanged(nameof(Conumables));
+            OnPropertyChanged(nameof(Consumables));
             OnPropertyChanged(nameof(HasConsumable));
         }
         public void RemoveItemFromInventory(GameItem item)
@@ -198,7 +199,7 @@ namespace Engine.Models
                 }
             }
             OnPropertyChanged(nameof(Weapons));
-            OnPropertyChanged(nameof(Conumables));
+            OnPropertyChanged(nameof(Consumables));
             OnPropertyChanged(nameof(HasConsumable));
         }
 

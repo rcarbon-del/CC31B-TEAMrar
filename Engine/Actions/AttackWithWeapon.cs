@@ -7,6 +7,7 @@ namespace Engine.Actions
         private readonly GameItem _weapon;
         private readonly int _maximumDamage;
         private readonly int _minimumDamage;
+        private readonly GameItem _itemInUse;
         
         public AttackWithWeapon(GameItem itemInUse, int minimumDamage, int maximumDamage)
             : base(itemInUse)
