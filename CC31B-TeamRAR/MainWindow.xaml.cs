@@ -68,5 +68,10 @@ namespace CC31B_TeamRAR
             Recipe recipe = ((FrameworkElement)sender).DataContext as Recipe;
             _gameSession.CraftItemUsing(recipe);
         }
+
+        private void GameMessages_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

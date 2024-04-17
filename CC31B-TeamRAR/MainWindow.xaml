@@ -23,9 +23,9 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <!-- Menu -->
-        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="Menu" Background="AliceBlue"/>
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="Menu" Background="#FAF0E6"/>
         <!-- Player stats -->
-        <Grid Grid.Row="1" Grid.Column="0" Background="Aquamarine">
+        <Grid Grid.Row="1" Grid.Column="0" Background= "#B9B4C7">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
@@ -53,8 +53,7 @@
             <Label Grid.Row="5" Grid.Column="1" Content="{Binding CurrentPlayer.Level}"/>
         </Grid>
         <!-- Gameplay -->
-        <Grid Grid.Row="1" Grid.Column="1"
-              Background="Beige">
+        <Grid Grid.Row="1" Grid.Column="1" Background="#9B76C1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
@@ -66,11 +65,11 @@
             <!-- Game Messages -->
             <Border Grid.Row="0" Grid.Column="0"
                     Grid.RowSpan="2"
-                    BorderBrush="Gainsboro"
+                    BorderBrush="#BC7FCD"
                     BorderThickness="1">
                 <RichTextBox x:Name="GameMessages"
-                             Background="Beige"
-                             VerticalScrollBarVisibility="Auto">
+                             Background= "#AC87C5"
+                             VerticalScrollBarVisibility="Auto" TextChanged="GameMessages_TextChanged">
                     <RichTextBox.Resources>
                         <Style TargetType="{x:Type Paragraph}">
                             <Setter Property="Margin" Value="0"/>
@@ -85,7 +84,7 @@
                    Stretch="UniformToFill"
                    Source="{Binding CurrentLocation.ImageName}"/>
             <Border Grid.Row="0" Grid.Column="1"
-                    BorderBrush="Gainsboro"
+                    BorderBrush="#5C5470"
                     BorderThickness="1">
                 <Grid Margin="3">
                     <Grid.RowDefinitions>
@@ -112,7 +111,7 @@
                    Stretch="Uniform"
                    Source="{Binding CurrentMonster.ImageName}" />
             <Border Grid.Row="1" Grid.Column="1"
-                    BorderBrush="Gainsboro"
+                    BorderBrush="#5C5470"
                     BorderThickness="1">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -139,11 +138,12 @@
         </Grid>
         <!-- Inventory, Quests, and Recipes -->
         <Grid Grid.Row="2" Grid.Column="0"
-              Background="BurlyWood">
+              Background="#FFC4C4">
             <TabControl>
                 <TabItem Header="Inventory">
                     <DataGrid ItemsSource="{Binding CurrentPlayer.GroupedInventory}"
                               AutoGenerateColumns="False"
+                              Background="#FFC4C4"
                               HeadersVisibility="Column">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Description"
@@ -199,7 +199,7 @@
         </Grid>
         <!-- Action controls -->
         <Grid Grid.Row="2" Grid.Column="1"
-              Background="Lavender">
+              Background="#FFC4C4">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>

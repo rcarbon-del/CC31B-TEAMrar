@@ -31,7 +31,7 @@ namespace Engine.Models
             ItemTypeID = itemTypeID;
             Name = name;
             Price = price;
-            ImageName = $"/Engine;component/Images/Locations/{imageName}";
+            ImageName = $"/Engine;component/Images/{imageName}";
             IsUnique = isUnique;
             Action = action;
         }
